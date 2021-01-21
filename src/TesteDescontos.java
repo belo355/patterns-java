@@ -8,10 +8,10 @@ import java.math.BigDecimal;
 public class TesteDescontos {
 
     public static void main(String[] args) {
-        Orcamento orcamento = new Orcamento(new BigDecimal("600"),6);
+        Orcamento orcamento = new Orcamento(new BigDecimal("1000"),6);
         CalculadoraDeDescontos calcDesconto = new CalculadoraDeDescontos();
 
-        BigDecimal valor_desconto = calcDesconto.calcular(orcamento);
-        System.out.println(valor_desconto);
+        System.out.println(calcDesconto.calcular(orcamento));
+
     }
 }
