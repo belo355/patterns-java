@@ -10,10 +10,13 @@ public class DescontoSomaValorProdutos extends Desconto {
         super(next);
     }
 
-    public BigDecimal calcular(Orcamento orcamento) {
-        if(orcamento.getValor().compareTo(new BigDecimal("500")) > 0){
-            return orcamento.getValor().multiply(new BigDecimal("0.2"));
-        }
-        return next.calcular(orcamento);
+    @Override
+    protected BigDecimal efetuaCalculo(Orcamento orcamento) {
+        return orcamento.getValor().multiply(new BigDecimal("0.2"));
+    }
+
+    @Override
+    protected boolean deveAplicar(Orcamento orcamento) {
+        return orcamento.getValor().compareTo(new BigDecimal("500")) > 0;
     }
 }
