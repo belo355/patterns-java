@@ -1,6 +1,4 @@
 import desconto.CalculadoraDeDescontos;
-import imposto.CalculadoraDeImpostos;
-import imposto.ICMS;
 import orcamento.Orcamento;
 
 import java.math.BigDecimal;

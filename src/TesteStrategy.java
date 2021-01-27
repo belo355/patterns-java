@@ -1,6 +1,5 @@
 import imposto.CalculadoraDeImpostos;
 import imposto.ICMS;
-import imposto.TipoImposto;
 import orcamento.Orcamento;
 
 import java.math.BigDecimal;
