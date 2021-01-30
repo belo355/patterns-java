@@ -11,7 +11,7 @@ public abstract class SituacaoOrcamento {
       return BigDecimal.ZERO;
     }
 
-    public  void aprovar(Orcamento orcamento){
+    public void aprovar(Orcamento orcamento){
         throw new DomainException("Orcamento nao pode ser aprovado");
     }
 
