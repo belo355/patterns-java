@@ -14,7 +14,7 @@ public class TesteCommandAndObserver {
         BigDecimal valorOrcamento = new BigDecimal("600");
         int quantidadeItens = Integer.parseInt("4");
 
-        GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens); //TODO: simula a chamada de um cliente
+        GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
         GeraPedidoHandler handler = new GeraPedidoHandler(Arrays.asList(new SalvarPedidoBd(), new EnviarEmailPedido()));
         handler.execute(gerador);
     }
