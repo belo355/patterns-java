@@ -8,9 +8,9 @@ public class TesteStrategy {
 
     public static void main(String[] args) {
         Orcamento orcamento = new Orcamento(new BigDecimal("11551"),1);
-        CalculadoraDeImpostos calc = new CalculadoraDeImpostos();
+        CalculadoraDeImpostos calculadora = new CalculadoraDeImpostos();
 
-        BigDecimal testeCalc = calc.calcular(new ICMS(), orcamento);
+        BigDecimal testeCalc = calculadora.calcular(orcamento, new ICMS(null));
         System.out.println(testeCalc);
     }
 }
