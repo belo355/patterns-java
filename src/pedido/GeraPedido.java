@@ -17,12 +17,4 @@ public class GeraPedido {
     public String getCliente() {
         return cliente;
     }
-
-    public BigDecimal getValorOrcamento() {
-        return valorOrcamento;
-    }
-
-    public int getQuantidadeItens() {
-        return quantidadeItens;
-    }
 }
